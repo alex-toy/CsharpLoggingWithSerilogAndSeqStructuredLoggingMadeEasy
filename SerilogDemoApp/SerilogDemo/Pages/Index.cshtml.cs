@@ -23,7 +23,17 @@ namespace SerilogDemo.Pages
 
             try
             {
-
+                for (int i = 0; i < 100; i++)
+                {
+                    if (i == 56)
+                    {
+                        throw new Exception("demo exception");
+                    }
+                    else
+                    {
+                        _logger.LogInformation($"The value of i is {i}.");
+                    }
+                }
             }
             catch (Exception ex)
             {
