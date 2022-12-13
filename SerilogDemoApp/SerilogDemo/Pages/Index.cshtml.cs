@@ -31,7 +31,7 @@ namespace SerilogDemo.Pages
                     }
                     else
                     {
-                        _logger.LogInformation($"The value of i is {i}.");
+                        _logger.LogInformation("The value of i is {i}.", i);
                     }
                 }
             }
